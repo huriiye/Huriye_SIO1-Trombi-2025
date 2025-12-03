@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+#MILANDOU{
+    background: linear-gradient(90deg, #0f3556, #176b9a);
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    color: #fefefe;
+    border-radius: 30px;
+}
+
+#MILANDOU:hover{
+    background: linear-gradient(90deg, #176b9a, #0f3556);
+    color: #fefefe;
+    transform: scale(1.15);
+    
+}
 /* Carte */
 #CHAPITEAU {
     background: linear-gradient(135deg, #87CEFA, #1E3A8A); /* Bleu clair -> bleu foncé */
