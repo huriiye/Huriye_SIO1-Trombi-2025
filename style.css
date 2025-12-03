@@ -1,3 +1,55 @@
+/* 🌈 Effet multicolore animé uniquement pour ta case */
+#GEBLEUX {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5, #4adede, #f9f871);
+  background-size: 400% 400%;
+  animation: pulseColor 10s ease infinite;
+  border: 2px solid #fff !important;
+  box-shadow: 0 0 25px rgba(255,255,255,0.5);
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-radius: 16px;
+}
+
+/* Animation du fond multicolore */
+@keyframes pulseColor {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Effet au survol */
+#GEBLEUX:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 0 0 35px rgba(255,255,255,0.7);
+}
+
+/* 🎞️ Animation photo : rotation 360° au survol */
+#GEBLEUX img {
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#GEBLEUX img:hover {
+  transform: rotate(360deg) scale(1.05);
+}
+
+/* Texte du nom avec licorne 🦄 */
+#GEBLEUX p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+/* Ajout automatique de l’emoji licorne après ton nom */
+#GEBLEUX p::after {
+  content: " 🦄";
+  font-size: 1.2em;
+  margin-left: 6px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 #MILANDOU{
